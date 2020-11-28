@@ -28,7 +28,17 @@ class Color(BaseColors):
 
 
 def main():
-    pass
+    players = [
+        Player(name='Username', is_ai=False, auto_ship=True, skill=1),
+        Player(name='IQ180', is_ai=True, auto_ship=True, skill=1)
+    ]
+
+    game = Game()
+
+    while True:
+        game.get_status()
+
+
 
 
 if __name__ == '__main__':
